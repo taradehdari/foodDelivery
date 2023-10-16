@@ -10,17 +10,20 @@ In this project, we aim to enhance customer satisfaction in food delivery servic
 
 
 ### EDA and Data Preprocessing
-We started by importing the dataset and performed exploratory data analysis (EDA) and preprocessing:
-
-* Renamed columns for better readability.
-* Dropped unnecessary columns.
-* Handled missing values by converting "Not given" ratings to NaN and then dropping them.
-
-We conducted exploratory data analysis to gain insights into the dataset, such as:
+We started by importing the dataset and conducted exploratory data analysis to gain insights into the dataset, such as:
 
 * Analyzing the distribution of cuisine types and days of the week.
 * Identifying top restaurants based on order frequency.
 * Investigating the relationships between numerical variables.
+
+Some preprocessing steps:
+* Renamed columns for better readability.
+* Dropped unnecessary columns.
+* Handled missing values by converting "Not given" ratings to NaN and then dropping them.
+* Categorical variables were one-hot encoded
+* Data was split into 30% test set and 70% training set. 
+
+
 
 ### Modeling and Evaluation
 We built and evaluated three machine learning models:
