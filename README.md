@@ -6,25 +6,32 @@
 * Muris Saab
 
 ## Overview
-This project is an analysis of a food delivery dataset, exploring various aspects of the data to gain insights and make data-driven decisions. We performed tasks such as data preprocessing, missing value handling, and exploratory data analysis. The model used was
-Below is an outline of the key steps taken in this analysis.
+In this project, we aim to enhance customer satisfaction in food delivery services by predicting whether a food order is satisfactory or not. We've explored various aspects of data analysis and machine learning models to achieve this goal.
 
-## Getting Started
 
-### Prerequisites
-To run this analysis, you'll need to install the following Python libraries:
+### EDA and Data Preprocessing
+We started by importing the dataset and performed exploratory data analysis (EDA) and preprocessing:
 
-* pandas
-* numpy
-* seaborn
-* matplotlib
+* Renamed columns for better readability.
+* Dropped unnecessary columns.
+* Handled missing values by converting "Not given" ratings to NaN and then dropping them.
 
-### Installation
+We conducted exploratory data analysis to gain insights into the dataset, such as:
 
-1. clone project repo 
-*  git clone https://github.com/taradehdari/foodDelivery.git
-2. run analysis script
-* python foodDelivery.py
+* Analyzing the distribution of cuisine types and days of the week.
+* Identifying top restaurants based on order frequency.
+* Investigating the relationships between numerical variables.
+
+### Modeling and Evaluation
+We built and evaluated three machine learning models:
+
+* Random Forest Classifier: Achieved an accuracy of around 81%.
+* Logistic Regression: Achieved an accuracy of approximately 83%.
+* Support Vector Machine (SVM): Also achieved an accuracy of around 83%. This model performed best, showing promising results in classifying satisfactory and unsatisfactory orders.
+
+### Conclusion 
+
+To enhance customer satisfaction in food delivery services, we recommend using the Support Vector Machine (SVM) model for binary classification. It offers a balance between precision and recall, making it a valuable tool for improving service quality and the overall customer experience. Since the dataset is imbalanced we also recommend grabbing data with lower ratings as well. 
 
 ## Data Source
 
